@@ -126,3 +126,8 @@ int main(){
     }
     return 0;
 }
+
+## OBSERVATIONS
+// length 35, 3 letters- 129516 words, 12 sec
+// length 40, 3 letters- 484446 words, 66 sec
+// length 45, 3 letters- 1812876 words, 230 sec
