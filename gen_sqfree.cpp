@@ -1,3 +1,5 @@
+## GENERATES SQUARE FREE WORDS OF GIVEN LENGTH WITH THE LETTERS IN THE VECTOR 'letters'
+
 #include<bits/stdc++.h>
 #include<chrono>
 using namespace std;
