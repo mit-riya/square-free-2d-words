@@ -1,3 +1,5 @@
+## It generates all matrices of size N*N by backtracking with letters from the vector 'letters' and checks if they are valid or not.
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
