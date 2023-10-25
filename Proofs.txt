@@ -1,0 +1,29 @@
+No of letters between 1 and 5 only 1 row can be filled  
+	No of letters between 1 and 2 can fill only finitely many letters
+For 1 letter – aa
+For 2 letters – aba
+No of letters between 3 and 5 can fill infinitely 
+For 3 letters – abcacbc..
+For 4 letters – abcdacbd…
+For 5 letters – abcdeacbde…
+But next row requires at least 3 new letters which are not available
+No of letters = 6
+	We can only fill 2 rows as (abc, def) filling the next row with abc again requires the parity of a,b,c to be fixed but all letters with fixed parity is not possible
+Parity as all odd or all even wont work 
+Parity as (o,e,e) will get to abaca_ then whatever we put in the blank results in square 
+Parity as (o,o,e) will get to acbc_c whatever we put in the blank results in square
+So is 2 fixed parity possible?
+Parity as ({o,e}, o, o) – only one letter can come in even position so that same letter cant come in odd position . So this case reduces to (e,o,o) which generates square.
+Parity as({o,e},o,e) – only blocks of letters that can come are ac,bc,ba.  But as soon as we put the block ba in place only bc block can come afterwards so we actually have blocks as ac,bc,babc.But after babc block bc and babc cant come as they result in square so only ac can come so our blocks become as ac,bc,babcac again on babcac block ac and babcac cant come so only bc can come so we have it as ac,bc,babcacbc . Now 
+ac results in babcacbcac square of bcac
+bc result in square of bc
+babcacbc results in square of itself
+so we are left with blocks of only ac,bc which reduces to 2 letters case.
+So Parity of at most one letter is fixed in this case so the rows will be as follows
+abc, def, abc but between the two rows of abc as a and b appear in both parities we can get an edge as opposite parities result in odd length and height is 2 . So there will be a square. 
+Same Is the case in no fixed parity
+No of letters = 7
+We saw in case of 6 letters we need at least 2 new letters to make up the new row so that square doesn’t form So even with 7 letters this is not possible.
+No of letters = 8 
+Now the pattern would be abc, def, ghc , 
+
